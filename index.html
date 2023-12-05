@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maricar's Portfolio</title>
+    <Style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .pic {
+            height: 500px;
+        }
+
+        main {
+            background-color:yellow;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project {
+            margin-bottom: 20px;
+           
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px 0;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Maricar's Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+                    <li><a href="#" onclick="navigateTo('about')">About</a></li>
+                    <li><a href="#" onclick="navigateTo('projects')">Projects</a></li>
+                    <li><a href="#" onclick="navigateTo('repositories')">Repositories</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    <main id="home" class="container">
+        <h2>Maricar's Portfolio</h2>
+        <p>"Code is like humor. When you have to explain it, it's bad."</p>
+        <img class="pic" src="mar.jpg" alt="">
+    </main>
+    <main id="about" class="container" style="display: none;">
+        <h2 class="container">About Me</h2>
+        <br><br><br>
+        <img class="pic" src="mar.jpg" alt="">
+        <h5>Name: </h5>
+        <h5>HP: 100&</h5>
+        <h5>XP: 5463567/6734</h5>
+        <br>
+        <h5>Race: princess</h5>
+        <h5>Class: IT Studen</h5>
+        <h5>Age: 19</h5>
+        <h5>GitHub Codename : <a href="https://github.com/dashboard">PinkyBabe</a></h5>
+        <br>
+        <h3>Skills:</h3>
+        <br>
+        <h5>"programing"</5>
+        <h5>"designing"</h5>
+        <h5>"ui designer"</h5>
+        <h5>"simple math"</h5>
+        <h5>"Bubble Sorting"</h5>
+    </main>
+    <main id="projects" class="container" style="display: none;">
+        <h2>respository</h2>
+        <br><br>
+        <div class="project">
+            <h3><a href="https://github.com/cacaii03/IT24-Assessment">IT24-Assessment</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/cacaii03/Balagan.M-IT24A">Balagan.M-IT24A</a></h3>
+        </div>
+          
+        
+        <div class="project">
+            <h3><a href="https://github.com/cacaii03/IT24-A">IT24-A</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/cacaii03/spa-jquery">spa-jquery</a></h3>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/cacaii03/it24-main">it24-mai</a></h3>
+        </div>
+       
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
